@@ -116,7 +116,7 @@ class ShareReceiverFragment : BaseContentFragment<List<ConferenceWithMessage>>()
     }
 
     override fun onCreateOptionsMenu(menu: Menu, inflater: MenuInflater) {
-        IconicsMenuInflaterUtil.inflate(inflater, context, R.menu.fragment_share_receiver, menu, true)
+        IconicsMenuInflaterUtil.inflate(inflater, requireContext(), R.menu.fragment_share_receiver, menu, true)
 
         menu.findItem(R.id.search).let { searchItem ->
             val searchView = searchItem.actionView as SearchView

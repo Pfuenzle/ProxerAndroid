@@ -250,7 +250,7 @@ class MangaFragment : BaseContentFragment<MangaChapterInfo>() {
     }
 
     override fun onCreateOptionsMenu(menu: Menu, inflater: MenuInflater) {
-        IconicsMenuInflaterUtil.inflate(inflater, context, R.menu.fragment_manga, menu, true)
+        IconicsMenuInflaterUtil.inflate(inflater, requireContext(), R.menu.fragment_manga, menu, true)
 
         toolbar.doOnLayout {
             toolbar.findViewById<View>(R.id.toggle_orientation).rotation = when (readerOrientation) {

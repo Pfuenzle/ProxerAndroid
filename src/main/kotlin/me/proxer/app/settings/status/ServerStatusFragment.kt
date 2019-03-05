@@ -7,8 +7,11 @@ import androidx.annotation.ContentView
 import androidx.core.os.bundleOf
 import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.RecyclerView
-import com.mikepenz.community_material_typeface_library.CommunityMaterial
 import com.mikepenz.iconics.IconicsDrawable
+import com.mikepenz.iconics.colorRes
+import com.mikepenz.iconics.paddingDp
+import com.mikepenz.iconics.sizeDp
+import com.mikepenz.iconics.typeface.library.communitymaterial.CommunityMaterial
 import kotterknife.bindView
 import me.proxer.app.R
 import me.proxer.app.base.BaseContentFragment

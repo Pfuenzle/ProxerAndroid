@@ -20,9 +20,11 @@ import com.google.android.material.floatingactionbutton.FloatingActionButton
 import com.jakewharton.rxbinding3.recyclerview.scrollEvents
 import com.jakewharton.rxbinding3.view.clicks
 import com.jakewharton.rxbinding3.widget.textChanges
-import com.mikepenz.community_material_typeface_library.CommunityMaterial
 import com.mikepenz.iconics.IconicsDrawable
+import com.mikepenz.iconics.paddingDp
+import com.mikepenz.iconics.sizeDp
 import com.mikepenz.iconics.typeface.IIcon
+import com.mikepenz.iconics.typeface.library.communitymaterial.CommunityMaterial
 import com.mikepenz.iconics.utils.IconicsMenuInflaterUtil
 import com.uber.autodispose.android.lifecycle.scope
 import com.uber.autodispose.autoDisposable
@@ -92,7 +94,9 @@ class MessengerFragment : PagedContentFragment<LocalMessage>() {
         }
 
         override fun onCreateActionMode(mode: ActionMode, menu: Menu): Boolean {
-            IconicsMenuInflaterUtil.inflate(mode.menuInflater, context, R.menu.fragment_messenger_cab, menu, true)
+            IconicsMenuInflaterUtil.inflate(
+                mode.menuInflater, requireContext(), R.menu.fragment_messenger_cab, menu, true
+            )
 
             return true
         }

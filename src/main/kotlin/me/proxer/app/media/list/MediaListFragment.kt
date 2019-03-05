@@ -245,7 +245,7 @@ class MediaListFragment : PagedContentFragment<MediaListEntry>(), BackPressAware
     }
 
     override fun onCreateOptionsMenu(menu: Menu, inflater: MenuInflater) {
-        IconicsMenuInflaterUtil.inflate(inflater, context, R.menu.fragment_media_list, menu, true)
+        IconicsMenuInflaterUtil.inflate(inflater, requireContext(), R.menu.fragment_media_list, menu, true)
 
         when (sortCriteria) {
             MediaSearchSortCriteria.RATING -> menu.findItem(R.id.rating).isChecked = true
